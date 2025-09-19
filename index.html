@@ -3,37 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QR Code Generator</title>
+  <title>QRcode Generator</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
     <p>Enter your text or URL to generate a QR code.</p>
     <input type="text" placeholder="Text or URL here" id="qrText">
-
-    <label>QR Color: <input type="color" id="qrColor" value="#000000"></label>
-    <label>Background Color: <input type="color" id="bgColor" value="#ffffff"></label>
-    <label>Size:
-      <select id="qrSize">
-        <option value="150x150">150x150</option>
-        <option value="200x200">200x200</option>
-        <option value="300x300">300x300</option>
-      </select>
-    </label>
-    <label>Format:
-      <select id="qrFormat">
-        <option value="png">PNG</option>
-        <option value="svg">SVG</option>
-      </select>
-    </label>
-
-    <div id="imgBox" style="display:none;">
-      <img src="" id="qrImage" alt="Generated QR Code">
+    <div id="imgBox">
+      <img src="" id="qrImage">
     </div>
-
     <button onclick="generateQR()">Generate QR Code</button>
-    <button id="downloadBtn" style="display:none;" onclick="downloadQR()">Download QR Code</button>
   </div>
   <script src="script.js"></script>
 </body>
-</html>
+</html>    
